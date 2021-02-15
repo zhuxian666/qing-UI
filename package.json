@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zhuxian666/qing-UI/issues"
   },
-  "homepage": "https://github.com/zhuxian666/qing-UI#readme"
+  "homepage": "https://github.com/zhuxian666/qing-UI#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轻UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+
+        #app {
+        }
+
+        body {
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+<style>
+    .demo {
+        background: #ddd;
+        border: 1px solid #666666;
+        height: 10px;
+    }
+
+    .demo1 {
+        height: 100px;
+        border: 1px solid #999999;
+    }
+</style>
+<div id="app">
+    <q-tabs :selected.sync="selectedTab">
+        <q-tabs-head>
+            <template v-slot:actions>
+                <button>设置</button>
+            </template>
+            <q-tabs-item name="woman">
+                <q-icon name="setting"></q-icon>
+                美女
+            </q-tabs-item>
+            <q-tabs-item name="finance" disabled>
+                财经
+            </q-tabs-item>
+            <q-tabs-item name="sports">
+                体育
+            </q-tabs-item>
+        </q-tabs-head>
+        <q-tabs-body>
+            <q-tabs-pane name="woman">
+                美女相关资讯
+            </q-tabs-pane>
+            <q-tabs-pane name="finance">
+                财经相关资讯
+            </q-tabs-pane>
+            <q-tabs-pane name="sports">
+                体育相关资讯
+            </q-tabs-pane>
+        </q-tabs-body>
+    </q-tabs>
+
+    <!--<q-layout style="height: 100vh">-->
+    <!--    <q-sider class="demo1" style="width: 200px">sider</q-sider>-->
+    <!--    <q-layout>-->
+    <!--        <q-header class="demo1">header</q-header>-->
+    <!--        <q-content class="demo1">content</q-content>-->
+    <!--        <q-footer class="demo1">footer</q-footer>-->
+    <!--    </q-layout>-->
+    <!--</q-layout>-->
+
+    <!--    <div style="background: lightblue;">-->
+    <!--        <q-row>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--            <q-col span="24" :ipad="{span:12,offset:2}" :pc="{span:8,offset:4}">-->
+    <!--                <div class="demo"></div>-->
+    <!--            </q-col>-->
+    <!--        </q-row>-->
+    <!--    </div>-->
+
+    <!--    <button @click="add">dianwo</button>-->
+    <!--    <q-input></q-input>-->
+    <!--    <q-input readonly></q-input>-->
+    <!--    <q-input disabled></q-input>-->
+    <!--    <q-input error="xxx"></q-input>-->
+    <!--    <q-input v-model="xxx"></q-input>-->
+    <!--    <div>-->
+    <!--        <q-button :loading="loading1" icon="setting" @click="loading1=!loading1">按钮1</q-button>-->
+    <!--        <q-button :loading="loading2" @click="loading2=!loading2">按钮2</q-button>-->
+    <!--        <q-button :loading="loading3" icon-position="right" icon="setting" @click="loading3=!loading3">按钮3</q-button>-->
+    <!--        <q-button-group>-->
+    <!--            <q-button icon="left">上一页</q-button>-->
+    <!--            <q-button>更多</q-button>-->
+    <!--            <q-button icon-position="right" icon="right">下一页</q-button>-->
+    <!--        </q-button-group>-->
+    <!--    </div>-->
+
+</div>
+
+<script src="./src/app.js"></script>
+<script src="./src/svg.js"></script>
+</body>
+</html>
+

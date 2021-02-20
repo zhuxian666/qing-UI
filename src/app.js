@@ -17,6 +17,8 @@ import TabsHead from './tabs-head.vue'
 import TabsBody from './tabs-body.vue'
 import TabsItem from './tabs-item.vue'
 import TabsPane from './tabs-pane.vue'
+import Collapse from './collapse.vue'
+import CollapseItem from './collapse-item.vue'
 
 Vue.component('q-button', Button)
 Vue.component('q-icon', Icon)
@@ -35,6 +37,8 @@ Vue.component('q-tabs-head', TabsHead)
 Vue.component('q-tabs-body', TabsBody)
 Vue.component('q-tabs-item', TabsItem)
 Vue.component('q-tabs-pane', TabsPane)
+Vue.component('q-collapse', Collapse)
+Vue.component('q-collapse-item', CollapseItem)
 
 Vue.use(Plugin)
 

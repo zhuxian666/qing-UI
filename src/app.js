@@ -6,7 +6,6 @@ import Toast from './toast.vue'
 import Plugin from "./plugin";
 import Row from './row.vue'
 import Col from './col.vue'
-import Icon from './icon.vue'
 import Layout from './layout.vue'
 import Header from './header.vue'
 import Footer from './footer.vue'
@@ -19,9 +18,9 @@ import TabsItem from './tabs-item.vue'
 import TabsPane from './tabs-pane.vue'
 import Collapse from './collapse.vue'
 import CollapseItem from './collapse-item.vue'
+import Popover from './popover.vue';
 
 Vue.component('q-button', Button)
-Vue.component('q-icon', Icon)
 Vue.component('q-button-group', ButtonGroup)
 Vue.component('q-input', Input)
 Vue.component('q-toast', Toast)
@@ -39,12 +38,14 @@ Vue.component('q-tabs-item', TabsItem)
 Vue.component('q-tabs-pane', TabsPane)
 Vue.component('q-collapse', Collapse)
 Vue.component('q-collapse-item', CollapseItem)
+Vue.component('q-popover', Popover)
 
 Vue.use(Plugin)
 
 new Vue({
     el: '#app',
     data: {
+        selected:['1','2'],
         selectedTab: 'sports',
         loading1: false,
         loading2: true,

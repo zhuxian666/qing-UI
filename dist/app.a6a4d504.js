@@ -12827,7 +12827,7 @@ var _default = {
   props: {
     autoClose: {
       type: [Boolean, Number],
-      default: 5,
+      default: 3,
       validator: function validator(value) {
         return value === false || typeof value === 'number';
       }
@@ -12847,7 +12847,7 @@ var _default = {
     },
     position: {
       type: String,
-      default: 'middle',
+      default: 'top',
       validator: function validator(value) {
         return ['top', 'bottom', 'middle'].indexOf(value) >= 0;
       }
@@ -13510,19 +13510,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 var _default = {
   name: 'QSider',
   components: {
     Button: _button.default
-  },
-  data: function data() {
-    return {
-      visible: true
-    };
-  },
-  methods: {
-    hide: function hide() {}
   }
 };
 exports.default = _default;
@@ -13539,28 +13530,7 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("transition", { attrs: { name: "slide" } }, [
-    _vm.visible
-      ? _c(
-          "div",
-          { staticClass: "sider" },
-          [
-            _vm._t("default"),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                on: {
-                  click: function($event) {
-                    _vm.visible = false
-                  }
-                }
-              },
-              [_vm._v("close")]
-            )
-          ],
-          2
-        )
-      : _vm._e()
+    _c("div", { staticClass: "sider" }, [_vm._t("default")], 2)
   ])
 }
 var staticRenderFns = []
@@ -14706,7 +14676,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64064" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64819" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

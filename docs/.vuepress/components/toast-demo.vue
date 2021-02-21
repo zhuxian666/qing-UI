@@ -1,7 +1,8 @@
 <template>
-    <div>
+    <div class="wrapper">
         <q-button @click="autoClose">会自动关闭</q-button>&nbsp;&nbsp;
         <q-button @click="clickClose">点击按钮才关闭</q-button>&nbsp;&nbsp;
+        <br>
         <br>
         <q-button @click="top">上方弹出</q-button>
         <q-button @click="middle">中间弹出</q-button>
@@ -48,4 +49,7 @@
 </script>
 
 <style lang="scss" scoped>
+    .wrapper{
+        padding-top: 10px;
+    }
 </style>

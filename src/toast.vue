@@ -20,7 +20,7 @@
         props: {
             autoClose: {
                 type: [Boolean, Number],
-                default: 5,
+                default: 3,
                 validator (value) {
                     return value === false || typeof value === 'number';
                 }
@@ -39,7 +39,7 @@
             },
             position: {
                 type: String,
-                default: 'middle',
+                default: 'top',
                 validator (value) {
                     return ['top', 'bottom', 'middle'].indexOf(value) >= 0
                 }
@@ -107,6 +107,7 @@
         $animation-duration: 300ms;
         &.position-top {
             top: 0;
+            z-index: 20;
             .toast {
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
@@ -114,6 +115,7 @@
             }
         }
         &.position-bottom {
+            z-index: 10;
             bottom: 0;
             .toast {
                 border-bottom-left-radius: 0;
@@ -122,6 +124,7 @@
             }
         }
         &.position-middle {
+            z-index: 10;
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
             .toast {

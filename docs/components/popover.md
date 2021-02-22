@@ -8,7 +8,7 @@ title: Popover - 弹出层
  
 ## 使用方法
 
-```html
+```vue
 <template>
     <div class="popover-wrapper">
         <q-popover position="bottom">

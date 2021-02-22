@@ -9,7 +9,7 @@ title: Collapse - 折叠面板
 
  
 ## 使用方法
-```html
+```vue
 <template>
     <div>
         <q-collapse :selected.sync="selected">

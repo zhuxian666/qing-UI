@@ -1,10 +1,9 @@
 <template>
-    <div class="tabsHead">
+    <div class="tabsHead" ref="head">
         <slot></slot>
         <div class="line" ref="line"></div>
         <div  class="actionsWrapper">
             <slot name="actions"></slot>
-
         </div>
     </div>
 </template>
@@ -16,8 +15,9 @@
         mounted() {
             this.eventBus.$on('update:selected',(item,vm)=>{
                 let {width,left}=vm.$el.getBoundingClientRect()
+                let headLeft =  this.$refs.head.getBoundingClientRect().x
                 this.$refs.line.style.width=`${width}px`
-                this.$refs.line.style.left=`${left}px`
+                this.$refs.line.style.left=`${left - headLeft}px`
             })
         }
     }

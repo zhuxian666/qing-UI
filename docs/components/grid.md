@@ -9,7 +9,7 @@ title: Grid - 栅格
 <grid-demo></grid-demo>
  
 ## 使用方法
-```html
+```vue
 <template>
     <div class="grid-wrapper">
         <q-row class="row">
@@ -42,7 +42,7 @@ title: Grid - 栅格
 预览
 <gutter-demo></gutter-demo>
 代码
-```html
+```vue
 <template>
     <div class="gutter-wrapper">
         <q-row gutter="30">
@@ -66,10 +66,12 @@ title: Grid - 栅格
 
 通过给 Row 设置 align 属性, 可以定义其子组件在该节点里面的排版方式。
 预览
+
 <align-demo></align-demo>
+
 代码
 
-```html
+```vue
 <template>
     <div class="align-wrapper">
         <q-row class="row" align="left">
@@ -93,15 +95,17 @@ Col 的选项有 span, offset 以及响应式相关的 ipad, narrowPc, pc, wideP
 
 ### 1. span
 
-栅格系统中的列是指 1 到 24 的值来表示其跨越的范围。通过设置 span 属性来实现。 例如：三个等宽的列可以使用<i-col span="8">列</i-col> 来创建其中一个，其余两个再复制两份。
+栅格系统中的列是指 1 到 24 的值来表示其跨越的范围。通过设置 span 属性来实现。 例如：三个等宽的列可以使用q-col span="8"列来创建其中一个，其余两个再复制两份。
 #### 2. offset
 
 使用 offset 属性,可以将列向右侧偏。
 例如，offset="4" 将元素向右侧偏移了 4 个列（column）的宽度。
 预览 
+
 <offset-demo></offset-demo>
+
 代码
-```html
+```vue
 <template>
     <div class="offset-wrapper">
         <q-row class="row">
@@ -134,13 +138,18 @@ Col 的选项有 span, offset 以及响应式相关的 ipad, narrowPc, pc, wideP
 
 代码
 
-```html
+```vue
 <template>
-    <div class="offset-wrapper">
-        <q-row class="row">
-            <q-col class="item" span="12" :ipad="{span:10}" :pc="{span:8,offset:4}"> <span></span> </q-col>
-            <q-col class="item" span="12" :ipad="{span:10,offset:4}" :pc="{span:8,offset:4}"> <span></span> </q-col>
-        </q-row>
-    </div>
+    <div class="response-wrapper">
+            <q-row>
+                <q-col class="item" span="2" :ipad="{span:10}" :pc="{span:8,offset:4}"> <span></span> </q-col>
+                <q-col class="item" span="22" :ipad="{span:10,offset:4}" :pc="{span:8,offset:4}"> <span></span> </q-col>
+            </q-row>
+            <q-row>
+                <q-col class="item" span="0" :ipad="{span:0}" :pc="{span:6}"> <span></span> </q-col>
+                <q-col class="item" span="0" :ipad="{span:11}" :pc="{span:6,offset:3}"> <span></span> </q-col>
+                <q-col class="item" span="24" :ipad="{span:11,offset:2}" :pc="{span:6,offset:3}"> <span></span> </q-col>
+            </q-row>
+        </div>
 </template>
 ```

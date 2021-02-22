@@ -1,3 +1,4 @@
+
 <template>
     <div class="offset-wrapper">
         <q-row class="row">
@@ -19,8 +20,8 @@
 </template>
 
 <script>
-    import Col from '../../../src/Col'
-    import Row from '../../../src/Row'
+    import Col from '../../../src/col.vue'
+    import Row from '../../../src/row.vue'
     export default {
         components: {
             'q-col': Col,

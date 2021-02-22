@@ -36,7 +36,7 @@
     $border-color-hover: #666;
     $border-radius: 4px;
     $font-size: 12px;
-    $box-shadow-color: rgba(0, 0, 0, 0.5);
+    $box-shadow-color: rgba(0, 0, 0, 0.3);
     $red: #F1453D;
     .wrapper {
         font-size: $font-size;

@@ -1,13 +1,13 @@
 module.exports={
-    base:'/q-ui',
-    title:'轻UI',
+    base:'/q-ui/',
+    title:'light UI',
     description:'一个简单好用的 UI 组件库',
     themeConfig:{
         displayAllHeaders: true,
         nav: [
             { text: '主页', link: '/' },
             { text: '文档', link: '/install/' },
-            { text: 'GitHub', link: 'https://github.com/wh2887/init-ui/' },
+            { text: 'GitHub', link: 'https://github.com/zhuxian666/qing-ui/' },
         ],
         sidebar:[
             {
@@ -28,10 +28,10 @@ module.exports={
                     '/components/input',
                     '/components/grid',
                     '/components/layout',
-                    '/components/tabs',
-                    '/components/popover',
-                    '/components/toast',
                     '/components/collapse',
+                    '/components/tabs',
+                    '/components/toast',
+                    '/components/popover',
                 ],
             },
         ],

@@ -1,10 +1,10 @@
 <template>
     <div class="button-wrapper">
-        <q-button>按钮1</q-button>
-        <q-button :loading="false" icon="setting" >按钮2</q-button>
-        <q-button :loading="false" icon-position="right" icon="setting">按钮4</q-button>
-        <q-button :loading="true">按钮3</q-button>
-        <q-button disabled>按钮5</q-button>
+        <q-button class="item">按钮1</q-button>
+        <q-button class="item" :loading="false" icon="setting" >按钮2</q-button>
+        <q-button class="item" :loading="false" icon-position="right" icon="setting">按钮4</q-button>
+        <q-button class="item" :loading="true">按钮3</q-button>
+        <q-button class="item" disabled>按钮5</q-button>
     </div>
 </template>
 
@@ -20,6 +20,9 @@
 
 <style lang="scss" scoped>
     .button-wrapper{
-        padding: 10px;
+        padding-top: 10px;
+        .item{
+            margin-top: 10px;
+        }
     }
 </style>

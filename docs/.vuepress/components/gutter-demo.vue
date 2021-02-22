@@ -16,8 +16,8 @@
     </div>
 </template>
 <script>
-    import Col from '../../../src/Col'
-    import Row from '../../../src/Row'
+    import Col from '../../../src/col'
+    import Row from '../../../src/row'
     export default {
         components: {
             'q-col': Col,

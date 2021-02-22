@@ -6,9 +6,9 @@ title: Button-按钮
 
 <buttons-demo></buttons-demo>
 
-使用方法
+## 使用方法
 
-```html
+```vue
 <q-button>默认按钮</q-button>
 <q-button icon="setting">默认按钮</q-button>
 <q-button :loading="true">默认按钮</q-button>
@@ -36,10 +36,10 @@ title: Button-按钮
 
 ### 代码
 
-```html
+```vue
 <q-button-group>
-    <q-button>上一页</q-button>
+    <q-button icon="left">上一页</q-button>
     <q-button>更多</q-button>
-    <q-button>下一页</q-button>
+    <q-button icon-position="right" icon="right">下一页</q-button>
 </q-button-group>
 ```

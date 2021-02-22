@@ -10,7 +10,7 @@ title: Toast - 弹出提示框
 
 想要使用 Toast 组件，首先需要引入该组件,然后使用 Vue 官方文档中插件的使用方法使用该插件。
 代码
-```html
+```vue
 <template>
     <div>
         <q-button @click="autoClose">会自动关闭</q-button>&nbsp;&nbsp;
@@ -68,7 +68,7 @@ title: Toast - 弹出提示框
 autoClose 此选项可以设定 Toast 自动关闭的延时。单位为“ 秒 ”，默认延时 3 秒后自动关闭。
 代码
 
-```html
+```vue
 <template>
     <div>
         <q-button @click="autoClose">会自动关闭</q-button>&nbsp;&nbsp;
@@ -98,7 +98,7 @@ autoClose 此选项可以设定 Toast 自动关闭的延时。单位为“ 秒 �
 Toast 组件的右侧按钮文本可编辑，并且支持传入一个回调。 closeButton 选项接收一个对象。对象包括 text 与 callback 属性。用于设定按钮的文本与回调。
 代码
 
-```html
+```vue
 <template>
     <div>
         <q-button @click="clickClose">点击按钮才关闭</q-button>&nbsp;&nbsp;

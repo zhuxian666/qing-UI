@@ -6,7 +6,7 @@ title: Layout - 布局
 <layout-demo></layout-demo>
  
 ## 使用方法
-```html
+```vue
 <template>
     <div class="wrapper">
         <q-layout>

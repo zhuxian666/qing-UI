@@ -6,13 +6,13 @@ title: Tabs - 标签
 <tabs-demo></tabs-demo>
  
 ## 使用方法
-```html
+```vue
 <template>
     <div class="tabs-wrapper">
         <q-tabs :selected.sync="selectedTab">
             <q-tabs-head>
                 <q-tabs-item name='tab1'>
-                    <q-icon icon-name="settings"></q-icon>
+                    <q-icon name="thumbs-up"></q-icon>
                     Tab1
                 </q-tabs-item>
                 <q-tabs-item name='tab2'>Tab2</q-tabs-item>

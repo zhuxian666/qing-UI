@@ -7,7 +7,7 @@ title: Input-输入框
  
 使用方法
 
-```html
+```vue
         <q-input></q-input>
         <q-input disabled></q-input>
         <q-input readonly></q-input>
